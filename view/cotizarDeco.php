@@ -173,7 +173,7 @@ $(function(){
            type: "POST",
            url: url,
            data: $("#cotizador").serialize(), // Adjuntar los campos del formulario enviado.
-	           success: function(data)
+	   success: function(data)
 	           {
 	               
                        //alert(data);

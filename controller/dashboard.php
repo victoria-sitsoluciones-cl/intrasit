@@ -53,6 +53,7 @@ if($sesion->validarSesion()){
         include('../view/CRUDCategoria.php');
     }else{
         include('../model/cotizacion.class.php');
+        include('../model/visita.class.php');
         include('../view/center.php');
     //include('../view/formMiPerfil.php');
     //include('../view/modal.php');
