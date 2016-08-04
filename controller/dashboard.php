@@ -51,6 +51,9 @@ if($sesion->validarSesion()){
         include('../model/categoria.class.php');
         include('../model/ccosto.class.php');
         include('../view/CRUDCategoria.php');
+    }elseif(isset($_GET['accion']) && $_GET['accion']=="CRUDFormasDePago"){
+            include('../model/formaPago.class.php');
+            include('../view/CRUDFormasDePago.php');
     }else{
         include('../model/cotizacion.class.php');
         include('../model/visita.class.php');

@@ -3,6 +3,7 @@
 include('../model/config.php');
 include('../model/sesion.class.php');
 $sesion=new Sesion();
+print_r($_POST); // <-- Agrega esa linea y comenta el header de abajo
 if(isset($_POST['ingresar']) && $_POST['ingresar']==1){
 	//coneccion a la BD
 	include('../model/conn.php');
@@ -23,7 +24,7 @@ if(isset($_POST['ingresar']) && $_POST['ingresar']==1){
             header('Location: ../index.html');
 	}
 }else{
-    header('Location: ../index.html');
+    //header('Location: ../index.html');
 }
 	
 

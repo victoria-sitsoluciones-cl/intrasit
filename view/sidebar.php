@@ -41,7 +41,7 @@
                 <li><a href="#">Centro de Costo</a></li>
                 <li><a href="#">Cliente</a></li>
                 <li><a href="#">Despacho</a></li>
-                <li><a href="#">Forma de Pago</a></li>
+                <li><a href="dashboard.php?accion=CRUDFormasDePago&<?php echo SID; ?>">Forma de Pago</a></li>
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Producto</a></li>
                 <li><a href="#">Servicio</a></li>
