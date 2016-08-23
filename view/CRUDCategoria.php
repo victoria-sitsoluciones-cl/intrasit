@@ -67,10 +67,10 @@ $(document).ready( function () {
     $data = $oCategoria->getCategorias($db);
     foreach($data AS $value){ ?>
       <tr>
-        <td><?php echo $value['idCategoria'] ?></td>
-        <td><?php echo $value['nombre'] ?></td>
-        <td><?php echo $value['ordenFormulario'] ?></td>
-        <td><?php echo $value['nombreCCosto'] ?></td>
+        <td>////<?php echo $value['idCategoria'] ?></td>
+        <td>////<?php echo $value['nombre'] ?></td>
+        <td>////<?php echo $value['ordenFormulario'] ?></td>
+        <td>////<?php echo $value['nombreCCosto'] ?></td>
         <td>
             <?php
             if($oCategoria->tieneHijos($db, $value['idCategoria']) ){ ?>
@@ -81,8 +81,8 @@ $(document).ready( function () {
                    data-title="¿Eliminar categoría?"
                    target="_self"
                    href="#"
-                   data-href="CRUDCategoria.php?accionCRUD=del&idCategoria=<?php echo $value['idCategoria'] ?>" 
-                   id="<?php echo $value['idCategoria'] ?>" >
+                   data-href="CRUDCategoria.php?accionCRUD=del&idCategoria=////<?php echo $value['idCategoria'] ?>" 
+                   id="////<?php echo $value['idCategoria'] ?>" >
                    
                     <i class="fa fa-trash" style="color: #d9534f"></i>
                 </a>
